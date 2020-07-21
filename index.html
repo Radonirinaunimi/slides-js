@@ -45,11 +45,12 @@
         </section>
         <!-- Speed benchmark -->
         <section>
+          <!-- Vertical Slide 1 -->
           <section>
             <h2> Vertical Slides </h2>
             <p align="justify">
-              One of the most useful features of reveal.js is the fact that one can add vertical slides. This would be usedful when
-              it comes to regrouping ideas. This can be achieved by just adding a section tag inside the section as follows:
+              One of the most useful features of reveal.js is the fact that one can add vertical slides. This would be usedful 
+              when it comes to regrouping ideas. This can be achieved by just adding a section tag inside the section as follows:
               <pre><code data-trim data-noescape data-line-numbers>
                 &lt;section&gt;
                   &lt;section&gt;Vertical Slide 1&lt;/section&gt;
@@ -57,6 +58,7 @@
                 &lt;/section&gt;
               </code></pre>
           </section>
+          <!-- Vertical Slide 2 -->
           <section>
             <h2> Another Slide </h2>
             <p align="justify">
@@ -68,6 +70,36 @@
                 &lt;/section&gt;
               </code></pre>
           </section>
+        </section>
+        <!-- Animation -->
+        <section>
+          <h2> Animation </h2>
+          <p align="justify">
+            Perhaps one of the main advantages of reveal-js over Beamer is the fact that one can add videos.
+          </p>
+          <video width="75%" data-autoplay src="videos/schrodinger.mp4" type="video/mp4"></video>
+        </section>
+        <!-- Mathematica Expressions -->
+        <section>
+          <h2> MATHS </h2>
+          <p align="justify">
+            Writing mathematical expressions is also simple using mathjax.
+          </p>
+          <pre><code data-trim data-noescape>
+            \[\begin{aligned}
+            x &amp; = a_1 (\text{mod} \: n_1) 
+            x &amp; = a_2 (\text{mod} \: n_2) 
+            x &amp; = a_3 (\text{mod} \: n_3) 
+            \end{aligned} \]
+          </code></pre>
+          <p align="justify">
+            The above translates into the following:
+          </p>
+          \[\begin{aligned}
+          x &amp; \equiv a_1 (\text{mod} \: n_1) \\ 
+          x &amp; \equiv a_2 (\text{mod} \: n_2) \\ 
+          x &amp; \equiv a_3 (\text{mod} \: n_3) \\ 
+          \end{aligned} \]
         </section>
         
       </div>
@@ -81,10 +113,11 @@
 		<script src="plugin/highlight/highlight.js"></script>
     <script>
       Reveal.initialize({
+				hash: true,
+				center: true,
 				controls: true,
 				progress: true,
-				center: true,
-				hash: true,
+        autoPlayMedia: true,
         math: {
           mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
           config: 'TeX-AMS_HTML-full',
