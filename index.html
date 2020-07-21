@@ -20,7 +20,7 @@
     <div class="reveal">
       <div class="slides">
 
-        <!-- new slide -->
+        <!-- Front slide -->
         <section>
           <a href="https://revealjs.com">
 						<img src="logo/reveal-white-text.svg" alt="reveal.js logo" style="height: 125px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
@@ -30,19 +30,44 @@
 						<small>Created by <a href="https://github.com/Radonirinaunimi">Tanjona R. Rabemananjara</a></small>
 					</p>
         </section>
-        <!-- new slide -->
+        <!-- Introduction -->
         <section style="font-size:80%">
           <h2> About this template </h2>
           <p align="justify">
-            The following gives a brief introduction and tutorial on how once can use this template to create easy and quick but
-            still eye-apealing slides. Currently, LaTeX is still the go-to document preparation system when it comes to writing
-            slides, especially in the scientific community. Hence, this template aims to achieve two things:
+            The following gives a brief introduction and tutorial on how one can use this template to create easy and quick but
+            still eye-appealing slides. Currently, LaTeX-Beamer is still the go-to document preparation system when it comes to 
+            writing slides, especially in the scientific community. Hence, this template aims to achieve two things:
           </p>
+          <ul>
+            <li class="fragment">Making slides presentation more interactive</li>
+            <li class="fragment">Making the experience of writing slides less painful and fast</li>
+          </ul>
         </section>
         <!-- Speed benchmark -->
         <section>
-            Speed Benchmark
-            <img data-src="../results/speed_benchmark.png">
+          <section>
+            <h2> Vertical Slides </h2>
+            <p align="justify">
+              One of the most useful features of reveal.js is the fact that one can add vertical slides. This would be usedful when
+              it comes to regrouping ideas. This can be achieved by just adding a section tag inside the section as follows:
+              <pre><code data-trim data-noescape data-line-numbers>
+                &lt;section&gt;
+                  &lt;section&gt;Vertical Slide 1&lt;/section&gt;
+                  &lt;section&gt;Vertical Slide 2&lt;/section&gt;
+                &lt;/section&gt;
+              </code></pre>
+          </section>
+          <section>
+            <h2> Another Slide </h2>
+            <p align="justify">
+              One can even highlight specific lines.
+              <pre><code data-trim data-noescape data-line-numbers="1,4|2-3">
+                &lt;section&gt;
+                  &lt;section&gt;Vertical Slide 1&lt;/section&gt;
+                  &lt;section&gt;Vertical Slide 2&lt;/section&gt;
+                &lt;/section&gt;
+              </code></pre>
+          </section>
         </section>
         
       </div>
